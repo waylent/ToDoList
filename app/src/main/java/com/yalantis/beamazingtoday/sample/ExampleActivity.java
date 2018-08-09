@@ -38,10 +38,10 @@ public class ExampleActivity extends AppCompatActivity implements BatListener, O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_example);
 
+        //设置Toolbar样式
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("");
-
         ((TextView) findViewById(R.id.text_title)).setTypeface(TypefaceUtil.getAvenirTypeface(this));
 
         mRecyclerView = (BatRecyclerView) findViewById(R.id.bat_recycler_view);
